@@ -1,6 +1,6 @@
 # region Import Packages
 
-from flask import request, redirect, url_for
+from flask import request
 import traceback
 import sys
 
@@ -24,7 +24,7 @@ class Run():
 
     # endregion
 
-    def starter(self, className, urlName, **kwargs):
+    def starter(self, className, **kwargs):
 
         try:
 
@@ -37,11 +37,11 @@ class Run():
             classOne = getattr(sys.modules[__name__], className)()
 
             
-            return classOne.main(urlName, methot, userId = userId, **kwargs)
+            return classOne.main(methot, userId = userId, **kwargs)
         
         except:
             traceback.print_exc()
-            return redirect(url_for("home.page"))
+            return "Error", 404
  
 # endregion
 

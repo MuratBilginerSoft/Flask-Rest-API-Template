@@ -23,11 +23,11 @@ class BluePrintQuee():
         
     # region Create BluePrint
 
-    def createBluePrint(self, bluePrintName, endPointName, className, urlName, **kwargs):
+    def createBluePrint(self, bluePrintName, endPointName, className, **kwargs):
         @self.BluePrintBps.route(f"{endPointName}", methods=self.__requestMethods)
         def page(id = None, productId = None, token=None):
 
-            return self.Starters.start(className, urlName,bluePrintName=bluePrintName, id=id, productId=productId, token=token, **kwargs)
+            return self.Starters.start(className, bluePrintName=bluePrintName, id=id, productId=productId, token=token, **kwargs)
 
     # endregion
 

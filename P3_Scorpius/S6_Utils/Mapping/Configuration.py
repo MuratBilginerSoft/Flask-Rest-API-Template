@@ -14,7 +14,7 @@ class Configuration:
     appConfig = {
         
         "staticFolder"      : "P1_Assets",
-        "secretKey"         : "CheckerMan",
+        "secretKey"         : "FlaskTemplate",
         "userFolderPath"    : os.path.join(os.getcwd(),"P1_Assets","Users"),
         "appPort"           : 6001,
         "rootUrl" : "http://localhost:6001",

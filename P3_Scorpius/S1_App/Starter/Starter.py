@@ -33,11 +33,11 @@ class Starter:
 
     # region Starter
 
-    def start(self, className, urlName, **kwargs):
+    def start(self, className, **kwargs):
 
         if request.method in self.__requestMethods:
 
-            return self.Runs.starter(className, urlName, **kwargs)
+            return self.Runs.starter(className, **kwargs)
 
         else:
             return self.Responses.main("201")
