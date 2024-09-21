@@ -4,7 +4,6 @@ import uuid
 import os
 
 from P3_Scorpius.S4_Logix.H5_GetDate.GetDate import GetDate
-from P3_Scorpius.S6_Utils.Mapping.Menu import Menu
 
 # endregion
 
@@ -23,7 +22,6 @@ class Session:
     surname = "Admin"
     company = "Company"
     role = "Manager"
-    sidebarMenu = Menu.sidebarMenu
     userCount = 1
     subscriptionId = "2fcd0716-130c-3304-afbe-c5559286813e"
 

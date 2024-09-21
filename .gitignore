@@ -161,5 +161,4 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-P6_VirtualEnv/
-P7_VirtualEnv/
+Q1_VirtualEnv/

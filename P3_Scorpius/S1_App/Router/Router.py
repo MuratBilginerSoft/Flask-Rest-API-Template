@@ -14,8 +14,9 @@ class Router:
 
         # ["BluePrintName", "ClassName", "routeUrl"]
 
-        bluePrintParameter =  {
+        bluePrintParameter = {
 
+            "murat": ["murat", "Murat", "/murat"],
             "home" : ["home", "Home", "/"],
             "signup" : ["signup", "SignUp", "/auth/signup"],
             "signin" : ["signin", "SignIn", "/auth/signin"],
@@ -42,3 +43,6 @@ class Router:
     # endregion
 
 # endregion
+
+
+
